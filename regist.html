@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/yinyuetai.css"/>
+    <link href="css/regist.css" rel="stylesheet">
+</head>
+<header id="header"></header>
+<body>
+	<div class="regist-box">
+		<div class="regist-header">
+			<div>
+				<b></b><span>52214598</span>
+				<span>位悦友正在看好音乐</span>
+			</div>
+		</div>
+		<div class="regist-main">
+			<div class="main-first" id="main-first">
+				<p>使用第三方账号，不用注册也能一键登录音悦台</p>
+				<div>
+					<dl>
+						<dt></dt>
+						<dd>用新浪账号登录</dd>
+					</dl>
+					<dl>
+						<dt></dt>
+						<dd>用微信账号登录</dd>
+					</dl>
+					<dl>
+						<dt></dt>
+						<dd>用QQ账号登录</dd>
+					</dl>
+					<dl>
+						<dt></dt>
+						<dd>用人人账号登录</dd>
+					</dl>
+					<dl>
+						<dt></dt>
+						<dd>用百度账号登录</dd>
+					</dl>
+				</div>
+				<div>
+					<a id="want">我想直接注册音乐台账号</a>
+				</div>
+			</div>
+			<div class="main-second" id="main-second">
+					<ul>
+						<li>
+							<span>中英文均可，酷酷的就行</span>
+							<input type="text" required  id="uname">
+							<div>
+							</div>
+						</li>
+						<li>
+							<span>(用于登录和找回密码)</span>
+							<input type="phone" required pattern="(\*86|0086)?\s*1[34578]\d{9}" id="phone">
+							<div>
+							</div>
+						</li>
+						<li>
+							<span>（6到20位字母，英文或其他符号）</span>
+							<input type="password" required id="pwd" pattern=".{6,20}">
+							<div>
+							</div>
+						</li>
+					</ul>
+					<button id="regist-btn">注册</button>
+			</div>
+		</div>
+		<div class="regist-footer">
+			<p><b>友情提示：</b></p>
+			<p>如果遇到不能注册的情况，请联系<a></a>(浏览器拦截请添加<span>客服QQ800002945)</span></p>
+		</div>
+	</div>
+	<footer id="footer"></footer>
+<script type="text/javascript">
+function reduceDimension(arr, dimensions) {
+    var result = arr;
+    while (--dimensions > 0)
+        result = Array.prototype.concat.apply([], result);
+    return result;
+}
+
+reduceDimension([[0, 1], [2, 3]], 1); // [[0, 1], [2, 3]]
+reduceDimension([[0, 1], [2, 3]], 2); // [0, 1, 2, 3]
+
+console.log(reduceDimension([
+    [
+        [0, 1, 2],
+        [3, 4, 5],
+    ],
+    [
+        [6, 7, 8],
+        [9, 10, 11],
+    ],
+], 3)); // [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+
+
+</script>
+</body>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/regist.js"></script>
+</html>
